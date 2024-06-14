@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.container-large {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-list-item {
+    margin-right: 30px;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+.header-list-item a {
+    color: #4a556c;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.green-button {
+    background-color: #20ad96;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.banner {}
+
+.background-cream {
+    background-color: #faf8f6;
+}
+
+.banner-left {
+    max-width: 50%;
+}
+
+.banner-left-caption {
+    font-size: 16px;
+    color: rgba(74, 85, 108, 0.4);
+    margin-bottom: 6px;
+    line-height: 24px;
+}
+
+.banner-left-heading {
+    font-size: 72px;
+    color: #333461;
+    line-height: 120%;
+    margin-bottom: 18px;
+}
+
+.banner-left-description {
+    font-size: 18px;
+    color: #4a556c;
+    line-height: 160%;
+    margin-bottom: 18px;
+}
+
+.banner-right {
+    padding: 100px 0;
+}
+
+.banner-right .banner-right-person .banner-right-person-image {
+    width: 462px;
+    height: 603px;
+}
+
+.banner-right .banner-right-person {
+    position: relative;
+}
+
+.banner-right .banner-right-wheel {
+    background-color: white;
+    padding: 24px;
+    position: absolute;
+    top: -10%;
+    left: -10%;
+}
+
+.rounded-lg {
+    border-radius: 10px;
+}
