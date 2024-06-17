@@ -5,6 +5,10 @@
     font-family: "Kumbh Sans", sans-serif;
 }
 
+:root {
+    --text-color: #4A556C;
+}
+
 .flex {
     display: flex;
 }
@@ -31,7 +35,7 @@
 }
 
 .header-list-item a {
-    color: #4a556c;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 15px;
 }
@@ -72,7 +76,7 @@
 
 .banner-left-description {
     font-size: 18px;
-    color: #4a556c;
+    color: var(--text-color);
     line-height: 160%;
     margin-bottom: 18px;
 }
@@ -100,4 +104,54 @@
 
 .rounded-lg {
     border-radius: 10px;
+}
+
+.help {
+    padding: 120px 0 100px 0;
+}
+
+.help h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+}
+
+.help .help-top {
+    margin-bottom: 56px;
+}
+
+.help .help-top p {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.help-top-left {
+    flex: 1;
+}
+
+.help-top-right {
+    flex: 1;
+    color: var(--text-color);
+}
+
+.help .help-bottom-group {
+    padding: 40px;
+}
+
+.help .help-bottom img {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 32px;
+}
+
+.help .help-bottom h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #041434;
+}
+
+.help .help-bottom p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
 }
