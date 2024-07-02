@@ -1,35 +1,42 @@
-const h1 = document.getElementById("heading");
+// [{name: "a"}, {name: "b"}, {name:"c "}]
 
-// // console.log(h1)
+const dataArray = [];
 
-const h1ByTag = document.getElementsByTagName("h1")
+function handleFormSubmit(event) {
+  const contactForm = document.forms["contact-form"];
 
-const h1ByClass = document.getElementsByClassName("heading-class")
+  event.preventDefault();
 
-// // console.log(h1ByClass)
+  console.log(contactForm);
 
-const elementByQuery = document.querySelector("#click-button");
+  const name = contactForm.name.value;
+  const email = contactForm.email.value;
+  const message = contactForm.message.value;
+  const phone = contactForm.phone.value;
 
-elementByQuery.onclick = function buttonClick() {
-  // setTimeout(function () {
-  //   const subodh = document.querySelector("#heading");
-  //   subodh.innerText = "Subodh" + Math.random();
-  //   subodh.style.color = "green";
-  //   subodh.style.fontSize = "100px";
-  // }, 2000);
+  const student = {
+    name: name,
+    email: email,
+    message: message,
+    phone: phone,
+  };
+  dataArray.push(student);
 
-  setInterval(function () {
-    const subodh = document.querySelector("#heading");
-    subodh.innerText = "Subodh" + Math.random();
-    subodh.style.color = "green";
-    subodh.style.fontSize = "100px";
-  }, 2000);
-};
+  console.log(dataArray);
 
-console.log(elementByQuery);
+  const valueDiv = document.getElementById("form-values");
+  valueDiv.innerHTML = "";
 
-// console.log("hello world")
+  dataArray.forEach(function (item) {
+    const div = document.createElement("div");
 
-// alert("hello world")
+    div.innerHTML = `<div>
+                            <h6 class="title completed">${item.name} <span class="ml-2 badge badge-danger">${item.phone}</span> </h6>
+                            <p class="description">${item.message}</p>
+                        </div>`;
 
-// console.log(window)
+    valueDiv.appendChild(div);
+  });
+
+  contactForm.reset();
+}
